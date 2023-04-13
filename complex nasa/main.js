@@ -1,9 +1,9 @@
-let showItems =  document.querySelector('#listed')
-let button = document.querySelector('#location')
+let showItems =  document.querySelector('#listed') //ul
+let button = document.querySelector('#location') //button
 
 function nasaLocation() {
     // let location = document.querySelector('input').value
-    const url = `https://data.nasa.gov/resource/gvk9-iz74.json`
+    const url = 'https://data.nasa.gov/resource/gvk9-iz74.json'
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(locationdata => {
